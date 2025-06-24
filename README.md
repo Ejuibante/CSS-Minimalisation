@@ -4,5 +4,5 @@
 
 <p> As of now there are two files namley teh two soundcloud CSS files, that work alongside the browser extesnsion stylus, you can download the files itself and paste it into stylus, or simply go to the raw file link which should be automatically detected by stylus and you can install it that way. But for the simplest install, I'll provide links for both:</p>
 
-<p>CSS Soundcloud Part 1 (Minimal)<a href="https://github.com/Ejuibante/CSS-Minimalisation/raw/refs/heads/main/SoundCloud_CSS_Part_1.user.css"</a>!</p>
-<p>CSS Soundcloud Part 2 (Minimal)<a href="https://github.com/Ejuibante/CSS-Minimalisation/raw/refs/heads/main/SoundCloud_CSS_Part_2.user.css"</a>!</p>
+<p>CSS Soundcloud Part 1 (Minimal)<a> href="https://github.com/Ejuibante/CSS-Minimalisation/raw/refs/heads/main/SoundCloud_CSS_Part_1.user.css"</a>!</p>
+<p>CSS Soundcloud Part 2 (Minimal)<a> href="https://github.com/Ejuibante/CSS-Minimalisation/raw/refs/heads/main/SoundCloud_CSS_Part_2.user.css"</a>!</p>
