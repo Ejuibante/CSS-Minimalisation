@@ -1,0 +1,143 @@
+/* ==UserStyle==
+@name           Minimal SoundCloud CSS
+@namespace      github.com/Ejuibante
+@version        1.0
+@description    A Simple Soundcloud CSS [1}
+@author         Luqman Khan
+==/UserStyle== */
+
+@-moz-document domain("youtube.com") {
+    body {
+        background-color: #000 !important;
+        color: #fff !important;
+    }
+}
+
+
+/* HIDE: Navigation, feed, home, explore, library */
+a[href="/you/library"],
+a[href="/you/likes"],
+a[href="/you/sets"],
+a[href="/you/stream"],
+a[href="/you/following"],
+a[href="/upload"],
+a[href="/discover"],
+a[href="/charts/top"],
+a[href="/charts/new"] {
+    display: none !important;
+}
+
+/* HIDE: Entire homepage & stream */
+.l-home, .l-trending, .l-discover, .l-explore, .l-stream, .l-fullwidth {
+    display: none !important;
+}
+
+/* HIDE: Sidebar & all recommendation panels */
+.l-sidebar-left, .l-sidebar-right, .relatedSounds {
+    display: none !important;
+}
+
+/* HIDE: Comments, reposts, stats, sharing, download, like count */
+.sound__comments,
+.sc-button-repost,
+.sc-button-share,
+.sc-button-addtoset,
+.sc-button-download,
+/*.sc-ministats,
+.soundStats,
+/*.sc-button-like .sc-button-label,
+/*.soundTitle__tagline,
+.waveformComments,
+.playbackTimeline__duration,
+.playbackTimeline__progressIndicator {
+    display: none ;
+}
+
+/* LIMIT: Search results to 10 items only */
+.search__list.sc-list-nostyle > li:nth-child(n+11) {
+    display: none !important;
+}
+
+/* KEEP: Like button only */
+.sc-button-like,
+.sc-button-repeat{
+    display: inline-block !important;
+}
+
+/* OPTIONAL: Keep message button */
+.sc-button-message {
+    display: inline-block !important;
+}
+
+/* REMOVE: Playback control bar (footer) */
+.playControls,
+.queue {
+    display: none !important;
+}
+
+/* CLEAN: Header - remove extras but keep search */
+.header__right,
+.navBar,
+.header__userNav,
+.header__moreMenu {
+    display: none !important;
+}
+
+.header__middle {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 10px !important;
+}
+
+/* CENTER: Cover art */
+.image__full,
+.image__fallback {
+    display: block !important;
+    margin: 0 auto !important;
+    max-width: 300px !important;
+}
+
+/* CLEAN: Profile extras */
+.profileHeaderInfo__stats,
+.profileHeader__info,
+.soundBadge__titleContext,
+.soundBadge__additional {
+    display: none !important;
+}
+
+/* REMOVE: Background waves + visualizations */
+.visualization,
+.waveform__background {
+    display: none !important;
+}
+
+/* STABILIZE PAGE SCROLL */
+body {
+    overflow-x: hidden !important;
+}
+/* === FORCE SEARCH BAR TO SHOW === */
+
+/* Ensure the header and search area are visible */
+.header,
+.header__middle {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: auto !important;
+    padding: 20px !important;
+    background: white !important;
+    z-index: 9999 !important;
+}
+
+
+button[title="Repeat"] {
+  display: inline-flex !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  position: relative !important;
+  z-index: 9999 !important;
+}
+
+
+

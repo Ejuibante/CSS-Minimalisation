@@ -1,0 +1,94 @@
+/* ==UserStyle==
+@name           Minimal SoundCloud CSS
+@namespace      github.com/Ejuibante
+@version        1.0
+@description    A Simple Soundcloud CSS [2}
+@author         Luqman Khan
+==/UserStyle== */
+
+@-moz-document domain("youtube.com") {
+    body {
+        background-color: #000 !important;
+        color: #fff !important;
+    }
+}
+
+
+
+/* ===== Super Minimal SoundCloud (Luqman's Custom Style) ===== */
+
+/* Hide header buttons but KEEP search bar */
+.header__right {
+    display: none !important;
+}
+
+/* Keep the header middle (search bar) */
+.header__middle {
+    display: flex !important;
+}
+
+
+/* Hide stream, home content, and recommendations */
+.l-listen-layout__sidebar,
+.l-listen-layout__main > .soundList__item,
+.sound__comments,
+.sound__footer,
+.sc-button-repost,
+.sc-button-share,
+.sc-ministats,
+.playbackTimeline__duration,
+.playbackTimeline__progressBackground,
+.waveform__layer,
+.visualization,
+.soundTitle__tagline,
+.soundActions,
+.trackItem__username,
+.trackItem__playbackCount,
+.trackItem__reposts,
+.trackItem__likes,
+.trackItem__duration,
+.soundTitle__titleContainer > .sc-link-light,
+.sc-border-light-bottom,
+.soundBadge__titleContext,
+.soundBadge__additional {
+    display: none !important;
+}
+
+/* Show only cover art */
+.image__full {
+    max-width: 300px !important;
+    margin: auto !important;
+    display: block !important;
+}
+
+/* Keep like button but hide the count */
+.sc-button-like {
+    display: inline-block !important;
+}
+.sc-button-like .sc-button-label {
+    display: none !important;
+}
+
+/* Keep message button */
+.sc-button-message {
+    display: inline-block !important;
+}
+
+/* Remove comment bubbles on waveforms */
+.commentPopover,
+.waveformComments {
+    display: none !important;
+}
+
+/* Hide timestamps and other icons */
+.sound__timeContainer,
+.playbackTimeline__duration,
+.playbackTimeline__progressIndicator,
+.soundStats {
+    display: none !important;
+}
+
+/* Keep the search bar visible */
+.headerSearch {
+    display: block !important;
+}
